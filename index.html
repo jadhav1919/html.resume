@@ -1,47 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2C3E50;
+        }
+
+        /* Layout Styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        header img {
+            border-radius: 50%;
+            border: 3px solid #2C3E50;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #7F8C8D;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
+        }
+        section h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Skill List */
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #16A085;
+            color: white;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .skills li:hover {
+            background-color: #1ABC9C;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #2C3E50;
+            padding: 20px;
+            color: white;
+        }
+        footer a {
+            color: #16A085;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="photo.jpg" alt="Profile Picture" height="200">
-            </td>
-            <td>
-                <h1>Jadhav sai</h1>
-                <h2>Web Developer</h2>
-            </td>
-        </tr>
-    </table>
-    <h3>Summary</h3>
-    <p>
-        I am a dedicated and hardworking student with a strong passion for learning and a commitment to personal growth. My academic journey has equipped me with skills in research, problem-solving, and time managemen
-    </p>
-    <hr>
-    <h3>Education</h3>
-    <p>
-         <ul>Bachelor of Technologys, Cyber security(2023-27),Intermediate(2021-22),Secondary school(2020)</ul>
-    </p>
-    <hr>
-    <h3>skills :</h3>
-    <p>
-        <table>
-            <ul><tr>Html</tr><br>
-                <tr>CCS</tr><br>
-                <tr>javascript</tr><br>
-                <tr>c/c++</tr><br>
-                <tr>jave</tr><br>
-    </ul>
-        </table>
-    </p>
-    <hr>
-    <footer>
-        <h3>Other</h3>
-        <a href="./Contact.html">Contact me</a><br>
-        <a href="hobbies.html">HOBBIES</a>
-        <p>© jadhav</p>
-    </footer>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="photo.jpg" alt="Profile Picture" height="150">
+            <div>
+                <h1>Jadhav Sai</h1>
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section>
+            <h3>Summary</h3>
+            <p>
+                I am a dedicated and hardworking student with a strong passion for learning and a commitment to personal growth. My academic journey has equipped me with skills in research, problem-solving, and time management.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor of Technology, Cybersecurity (2023-27)</li>
+                <li>Intermediate (2021-22)</li>
+                <li>Secondary School (2020)</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Kali Linux - Basic Networking</li>
+            </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <h3>Other</h3>
+            <a href="./Contact.html">Contact Me</a> | <a href="hobbies.html">Hobbies</a>
+            <p>© Jadhav Sai</p>
+        </footer>
+    </div>
+
 </body>
 </html>
